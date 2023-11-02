@@ -3,6 +3,7 @@ package com.sg.driver;
 import java.lang.reflect.Method;
 import java.util.Map;
 
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
@@ -80,5 +81,11 @@ public class DriverScript {
 			obj = null;
 			script = null;
 		}
+	}
+	
+	
+	@AfterSuite
+	public void tearDown() {
+		reports.endExtentReport(test);
 	}
 }
