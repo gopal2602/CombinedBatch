@@ -32,7 +32,6 @@ public class UserModuleScripts extends DriverScript{
 		}finally {
 			oBrowser.close();
 			oBrowser = null;
-			reports.endExtentReport(test);
 		}
 	}
 	
@@ -67,7 +66,6 @@ public class UserModuleScripts extends DriverScript{
 		}finally {
 			oBrowser.close();
 			oBrowser = null;
-			reports.endExtentReport(test);
 		}
 	}
 	
@@ -105,7 +103,6 @@ public class UserModuleScripts extends DriverScript{
 		}finally {
 			oBrowser.close();
 			oBrowser = null;
-			reports.endExtentReport(test);
 		}
 	}
 }
