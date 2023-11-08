@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="testNG Suite">
+<suite name="testNG Suite" data-provider-thread-count="2">
   <test name="execute Tests">
      <classes>
         <class name="com.sg.driver.DriverScript"></class>

@@ -50,7 +50,7 @@ public class DriverScript {
 	}
 	
 	
-	@DataProvider(name = "testScripts")
+	@DataProvider(name = "testScripts", parallel = false)
 	public Object[][] dataProvider(){
 		return datatable.createDataProvider("ExecutionController", "Controller");
 	}
@@ -83,6 +83,10 @@ public class DriverScript {
 		}
 	}
 	
+//	@AfterSuite
+//	public void tearDown1() {
+//		reports.endExtentReport(test);
+//	}
 	
 	@AfterSuite
 	public void tearDown() {
